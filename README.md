@@ -123,29 +123,33 @@ GET /autores
 
 Exemplo de resposta (200):
 
+```json
 [
-{
-"id": "60c72b2f9b1e8b3dfc8e7cdd",
-"nome": "Machado de Assis",
-"nacionalidade": "Brasileira"
-},
-{
-"id": "60c72b3f9b1e8b3dfc8e7cdf",
-"nome": "Clarice Lispector",
-"nacionalidade": "Ucraniana"
-}
+  {
+    "id": "60c72b2f9b1e8b3dfc8e7cdd",
+    "nome": "Machado de Assis",
+    "nacionalidade": "Brasileira"
+  },
+  {
+    "id": "60c72b3f9b1e8b3dfc8e7cdf",
+    "nome": "Clarice Lispector",
+    "nacionalidade": "Ucraniana"
+  }
 ]
+```
 
-### ** Cadastrar um novo autor **
+### **Cadastrar um novo autor**
 
 POST /autores
 
 Exemplo de body(JSON):
 
+```json
 {
-"nome": "Jorge Amado",
-"nacionalidade": "Brasileira"
+  "nome": "Jorge Amado",
+  "nacionalidade": "Brasileira"
 }
+```
 
 ### ** Atualizar um livro **
 
@@ -153,13 +157,19 @@ PUT /livros/{id}
 
 Exemplo de body (JSON):
 
+```json
 {
-"titulo": "Dom Casmurro",
-"editora": "Nova Editora",
-"preco": 45.90,
-"paginas": 320
+  "titulo": "Dom Casmurro",
+  "editora": "Nova Editora",
+  "preco": 45.9,
+  "paginas": 320
 }
+```
 
 ## 🧑‍💻 Contribuições
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e enviar pull requests. Todas as formas de ajuda são bem aceitas para melhorar o projeto, seja adicionando novas funcionalidades, corrigindo bugs ou melhorando a documentação.
+
+```
+
+```
