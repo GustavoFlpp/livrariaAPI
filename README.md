@@ -112,3 +112,54 @@ Com o **Swagger**, você pode:
 Após iniciar o servidor, você pode acessar a documentação interativa da API no seguinte endereço:
 
 http://localhost:3000/api-docs
+
+## 🧑‍💻 Exemplos de Requisições
+
+Aqui estão alguns exemplos de como fazer requisições HTTP diretamente, caso prefira utilizar ferramentas como **Postman** ou **Insomnia**:
+
+### **Listar todos os autores**
+
+GET /autores
+
+Exemplo de resposta (200):
+
+[
+{
+"id": "60c72b2f9b1e8b3dfc8e7cdd",
+"nome": "Machado de Assis",
+"nacionalidade": "Brasileira"
+},
+{
+"id": "60c72b3f9b1e8b3dfc8e7cdf",
+"nome": "Clarice Lispector",
+"nacionalidade": "Ucraniana"
+}
+]
+
+### ** Cadastrar um novo autor **
+
+POST /autores
+
+Exemplo de body(JSON):
+
+{
+"nome": "Jorge Amado",
+"nacionalidade": "Brasileira"
+}
+
+### ** Atualizar um livro **
+
+PUT /livros/{id}
+
+Exemplo de body (JSON):
+
+{
+"titulo": "Dom Casmurro",
+"editora": "Nova Editora",
+"preco": 45.90,
+"paginas": 320
+}
+
+## 🧑‍💻 Contribuições
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e enviar pull requests. Todas as formas de ajuda são bem aceitas para melhorar o projeto, seja adicionando novas funcionalidades, corrigindo bugs ou melhorando a documentação.
