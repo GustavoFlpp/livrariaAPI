@@ -1,6 +1,8 @@
 import express from 'express';
 import conectaNaDatabase from './config/dbConnect.js';
 import routes from './routes/index.js';
+import swaggerDocs from './swaggerConfig.js';
+import swaggerUi from 'swagger-ui-express';
 
 const conexao = await conectaNaDatabase();
 
@@ -15,10 +17,6 @@ conexao.once('open', () => {
 const app = express();
 routes(app);
 
-app.delete('/livros/:id', (req, res) => {
-  const index = buscaLivro(req.params.id);
-  livros.splice(index, 1);
-  res.status(200).send('livro removido com sucesso');
-});
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 export default app;
